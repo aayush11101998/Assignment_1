@@ -17,5 +17,5 @@ The robot moves in the direction of token if it is alligned with the token i.e t
 ###### 5. Recognise gold token
 Just like silver token we create variables "dist_g" and "rot_yg" to know the position of robot from gold token. dist_g tells the distance of robot from gold token whereas rot_yg tells the position. If the token.dist returns dist_g and token.rot_y returns rot_yg then the token is a gold token. 
 The gold token need to be avoided. The robot must first make a side its priority be it left or right, i.e once the robot comes to a corner it should turn in the opposite direction of the gold token walls towards the path it has not covered. Threshold values for rot_yg are created in order to avoid collision and to choose direction. If the distance of robot and gold token is less then the threshold value the robot turn to the direction where the valid path exists. To decide whether robot turns right or left compare the distance between robot and gold token in both direction and the direction that is greater robot turns in that direction.
-###### 6. Result
+### Result
 Code is in assignment 1 and can be run using ***python run.py assignment 1.py. Robot follows the path specified in the environment***
